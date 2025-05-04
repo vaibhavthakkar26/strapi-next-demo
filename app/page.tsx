@@ -6,7 +6,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen">
   
-    <WhyChooseUsPage data={data ? [data] : []} />
+    <WhyChooseUsPage data={data ? data : []} />
     </main>
   );
 }

@@ -26,10 +26,10 @@ export interface TitleWithFeaturesData {
 
 
 export const getTitleWithFeatures =
-  async (): Promise<WhyChooseUsProps | null> => {
+  async (): Promise<WhyChooseUsProps[] | null> => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:1337/api/why-choose-uses?populate[Features][populate]=*"
+        "https://strapi-next-backend-pw3p.onrender.com/api/why-choose-uses?populate[Features][populate]=*"
       );
       return response.data.data;
     } catch (error) {
