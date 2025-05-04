@@ -70,7 +70,7 @@ const WhyChooseUsPage = ({ data }: WhyChooseUsPageProps) => {
     <section className="py-16 px-4">
       {data.map((item) => (
         <div key={item.id} className="">
-          <div className="container mx-auto text-center mb-12">
+          <div className="container mx-auto text-center mb-32">
             <h3 className="text-2xl font-medium mb-2">{item.Title}</h3>
             <h2 className="text-4xl font-bold mb-4">{item.subTitle}</h2>
             <p className="text-lg">{item.desc}</p>
