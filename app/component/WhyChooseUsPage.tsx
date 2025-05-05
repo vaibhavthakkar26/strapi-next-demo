@@ -26,11 +26,8 @@ interface WhyChooseUsPageProps {
 }
 
 const WhyChooseUsPage = ({ data }: WhyChooseUsPageProps) => {
-  console.log('data', data)
   const [activeFeatures, setActiveFeatures] = useState<Record<number, FeatureType>>({});
-  
-  const baseURl = "https://strapi-next-backend-pw3p.onrender.com";
-
+  console.log('data', data)
   useEffect(() => {
     if (data && data.length > 0) {
       const initialActiveFeatures: Record<number, FeatureType> = {};
@@ -81,7 +78,7 @@ const WhyChooseUsPage = ({ data }: WhyChooseUsPageProps) => {
               {activeFeatures[item.id] && activeFeatures[item.id]?.image?.url && (
                 <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-lg z-10">
                   <Image
-                    src={`${baseURl}${activeFeatures[item.id].image.url}`}
+                    src={`${activeFeatures[item.id].image.url}`}
                     alt={activeFeatures[item.id].Title || "Feature image"}
                     width={250}
                     height={250}

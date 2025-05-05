@@ -5,9 +5,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'strapi-next-backend-pw3p.onrender.com',
+        hostname: 'proud-birthday-d061c6d9d3.media.strapiapp.com',
         port: '',
-        pathname: '/uploads/**',
+        pathname: '/**',
       },
     ],
   },
